@@ -1,0 +1,27 @@
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% de la altura de la ventana */    
+  }
+ion-item{
+    height: 90px;
+}
+.boton{
+    height: 80px;
+    font-size: 20px;
+    
+}
+ion-button{
+    --background:#005f5f;
+}
+
+.scanner-active .custom-content {
+    display: none; /* Ocultar el contenido de tu página cuando está en modo scanner */
+  }
+.image-container{
+    img{
+        height: 50px;
+    }
+}

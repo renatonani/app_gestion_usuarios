@@ -1,0 +1,50 @@
+<ion-header [translucent]="true" class = header>
+  <ion-toolbar style="--background: rgb(0, 171, 171);">
+    <ion-title>
+      Seguridad para tus datos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" [fullscreen]="true"> 
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <div class = text-container>
+    <p>¡Bienvenido!</p>
+  </div>
+  <form (ngSubmit)="login()">
+    <div class = login>
+      <ion-input placeholder=" Ingrese su correo" type="email" [(ngModel)]="email" name="email"></ion-input>
+      <ion-input placeholder=" Ingrese su contraseña" type="password" [(ngModel)]="password" name="password" required minlength="6"></ion-input>    
+      <div class = button-container>
+        <ion-button style = "font-size: 23px; --background: rgb(0, 0, 0); color: white;" type="submit">Iniciar sesión</ion-button>
+      </div>
+    </div>
+  </form>        
+  <!-- <div class="image-container2">
+    <img src="../../assets/rompecabezas2.png" alt="">
+  </div> -->
+  <div class="button-container">
+    <div class="button-container2">
+      <ion-button style="--background: rgb(255, 255, 255);" (click)="AutoRellenar('admin@admin.com','111111')">
+        <ion-icon name="accessibility-outline"></ion-icon>
+      </ion-button>
+      <p>Usuario 1</p>
+    </div>
+    <div class="button-container2">
+      <ion-button style="--background: #6cc0c0;" (click)="AutoRellenar('invitado@invitado.com','222222')">
+        <ion-icon name="accessibility"></ion-icon>
+      </ion-button>
+      <p>Usuario 2</p>
+    </div>
+    <div class="button-container2">
+      <ion-button style="--background: #005f5f;" (click)="AutoRellenar('usuario@usuario.com','333333')">
+        <ion-icon name="accessibility-outline"></ion-icon>
+      </ion-button>
+      <p>Usuario 3</p>
+    </div>   
+  </div>
+  <!-- <div class="image-container">
+    <img src="../../assets/rompecabezas.png" alt="">
+  </div> -->
+</ion-content>

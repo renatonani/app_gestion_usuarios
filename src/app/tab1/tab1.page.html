@@ -1,17 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" class="custom-content">
+  <div class="center-container">
+    <div class="parte-superior">
+      <ion-label style="font-size: 35px;"> Bienvenido {{usuarioPerfil}} </ion-label>
+    </div>
+    <div class="parte-inferior">
+      <ion-buttons *ngIf="usuarioPerfil && usuarioPerfil === 'admin'" class="custom-button">
+        <ion-button (click)="altaUsuario()" expand="full">Dar de alta un usuario</ion-button>
+      </ion-buttons>
+      <!-- Botón para ir a la página del listado de usuarios -->
+      <ion-buttons class="custom-button">
+        <ion-button (click)="irAListadoUsuarios()" expand="full">Ir al listado de usuarios</ion-button>
+      </ion-buttons>
+      <ion-buttons class="custom-button">
+        <ion-button style="background-color: rgb(174, 25, 25);" (click)="logout()" expand="full">Cerrar sesión</ion-button>
+      </ion-buttons>
+    </div>
+  </div>
 </ion-content>

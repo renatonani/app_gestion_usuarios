@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-card *ngFor="let usuario of listaUsuarios">
+      <ion-card-header>
+        
+      </ion-card-header>
+      <ion-card-content>
+        <img class="image" [src]="'data:image/jpeg;base64,' + usuario.foto">
+        <p>Nombres: {{ usuario.nombres }}</p>  
+        <p>Apellidos: {{ usuario.apellidos }}</p>        
+        <p>DNI: {{ usuario.dni }}</p>
+        <p>Correo: {{ usuario.correo }}</p>        
+        <!-- Agrega más campos de usuario según tus necesidades -->
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

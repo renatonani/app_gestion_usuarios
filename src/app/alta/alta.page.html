@@ -1,0 +1,50 @@
+<body *ngIf="!usandoQR">
+  <ion-content [fullscreen]="true" class="custom-content">   
+      <div>
+        <ion-list>
+          <!-- Input para cargar una foto -->
+          <ion-item>
+            <ion-label position="stacked">Foto</ion-label>      
+            <ion-button (click)="cargarFotos()"> Subir foto</ion-button>
+            <div class="image-container" *ngIf="fotoSubida">
+              <img [src]="'data:image/jpeg;base64,' + fotoSubida" alt="Foto de perfil" width = "50" height="50">
+            </div>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label position="stacked">Apellidos</ion-label>
+            <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="stacked">Nombres</ion-label>
+            <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="stacked">DNI</ion-label>
+            <ion-input type="text" [(ngModel)]="user.dni"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="stacked">Correo</ion-label>
+            <ion-input type="email" [(ngModel)]="user.correo"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="stacked">Clave</ion-label>
+            <ion-input type="password" [(ngModel)]="user.clave"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label position="stacked">Reingrese la clave</ion-label>
+            <ion-input type="password" [(ngModel)]="rePassword"></ion-input>
+          </ion-item>
+        </ion-list>
+        
+        <ion-button class="boton" expand="full" (click)="subirUsuario()">Guardar Usuario</ion-button>
+      
+        <ion-button class="boton" expand="full" (click)="leerQR()">Escanear DNI</ion-button>
+      </div> 
+  </ion-content>    
+</body>   
