@@ -1,23 +1,23 @@
-## Aplicación de relevamiento visual
+## Aplicación de gestión de usuarios
 Esta aplicación fue desarrollada como parte proyecto de la materia Prácticas Profesionales Supervisadas de la Tecnicatura Universitaria en Programación de la UTN-FRA.
-La misma está destinada a permitir que el usuario interactúe a través de imágenes y muestre las cosas agradables o desagradables de su vivienda, permitiendo a su vez que otros usuarios
-puedan visualizar éstas imágenes y realizar votaciones.
+La misma permite gestionar un listado de usuarios con su correspondiente información. En caso de ingresar con un perfil de administrador podrán darse de alta nuevos usuarios, cargando todos los datos necesarios.
+Además se cuenta con la posibilidad de escanear el QR del documento (DNI) para una carga de datos automática al momennto de dar de alta.
 El proyecto sólo tiene compatibilidad con el SO Android.
 
 
 ## ICONO
-![icon](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/db8bb765-1ca9-47d9-8be0-d2ab05499534)
-
+![icon](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/c140cdd6-46ae-4bc1-aeee-910ef30afa3c)
 
 ## Splash 
-![splash3](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/4d076a8a-0dd5-4030-83f1-7a55ec25fbca)
+![splash7](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/f32b9ec9-978d-44ca-9987-a4ad917195d9)
 
 ## Login
-![WhatsApp Image 2024-06-16 at 19 37 54](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/bea5f1e6-90f7-4e95-ad68-dc3eec43be1d)
+![WhatsApp Image 2024-06-16 at 19 37 55 (3)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/8378bf5f-bcb3-443d-b217-9e06517bdcfb)
 
 
 ## Pantallas principales 
 
-![WhatsApp Image 2024-06-16 at 19 37 54 (1)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/ab7f5ad9-902e-4f85-8b35-47ed28c5f2bd)
-
-![WhatsApp Image 2024-06-16 at 19 37 54 (2)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/01a7f13c-8d54-436d-9292-c97c19943971)
+![WhatsApp Image 2024-06-16 at 19 37 55 (4)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/d27b8d31-9f03-4208-85d1-ff9c0736c159)
+![WhatsApp Image 2024-06-16 at 19 37 56 (3)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/80f829c6-a7a6-4feb-a59b-78fc2c3fb99b)
+![WhatsApp Image 2024-06-16 at 19 37 56 (2)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/90091b0a-52be-4164-ba3b-42d128144f17)
+![WhatsApp Image 2024-06-16 at 19 37 56 (4)](https://github.com/renatonani/app_gestion_usuarios/assets/98593040/b09d7a26-b825-4eb1-831d-c8b427304408)
